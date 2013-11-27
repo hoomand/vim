@@ -64,6 +64,9 @@ set t_Co=256
 set tags=tags;/
 set virtualedit=block
 set wrap
+" Store all swp files in a central directory
+set backupdir=~/.vim/vimbackup//
+set directory=~/.vim/vimbackup//
 syntax on
 
 highlight   CursorColumn  term=NONE    cterm=none ctermbg=232
