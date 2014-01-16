@@ -19,3 +19,9 @@
 [submodule "bundle/vim-blade"]
 	path = bundle/vim-blade
 	url = git://github.com/xsbeats/vim-blade.git
+[submodule "bundle/vim-rails"]
+	path = bundle/vim-rails
+	url = git://github.com/tpope/vim-rails.git
+[submodule "bundle/vim-bundler"]
+	path = bundle/vim-bundler
+	url = git://github.com/tpope/vim-bundler.git
