@@ -1,37 +1,11 @@
 version 7.0
 
-""" Vundle Entries
-" NOTE: comments after Bundle command are not allowed..
-set nocompatible               " be iMproved
-filetype off                   " required!
-
 let mapleader=","
 
-set runtimepath+=~/.vim/bundle/vundle/
-call vundle#rc()
+""" Call pathogen
+execute pathogen#infect()
+call pathogen#helptags()
 
-" let Vundle manage Vundle
-" required! 
-Bundle 'gmarik/vundle'
-
-" My Bundles here:
-"
-" original repos on github
-Bundle 'The-NERD-Commenter'
-Bundle 'The-NERD-tree'
-Bundle 'fugitive.vim'
-Bundle 'ctrlp.vim'
-" Required by tselectbuffer
-Bundle 'tlib'
-Bundle 'tselectbuffer'
-Bundle 'vim-pathogen'
-
-filetype plugin indent on     " required!
-filetype plugin on
-
-""" vimrc resumes :-)
-
-execute pathogen#infect('pathogenStuff/{}')
 syntax on
 filetype plugin indent on
 
