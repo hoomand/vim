@@ -85,4 +85,11 @@ nmap <silent> <C-B> :TSelectBuffer<cr>
 " Define ,t to open nerdtree
 nmap <silent> <Leader>t :NERDTreeToggle<cr>
 
+" RSpec.vim mappings
+map <Leader><Leader>t :call RunCurrentSpecFile()<CR>
+map <Leader><Leader>s :call RunNearestSpec()<CR>
+map <Leader><Leader>l :call RunLastSpec()<CR>
+map <Leader><Leader>a :call RunAllSpecs()<CR>
+let g:rspec_command = "!rspec --drb {spec}"
+
 colorscheme xoria256
