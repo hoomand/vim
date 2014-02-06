@@ -9,7 +9,7 @@ In order to set it up:
  git submodule update
 ```
 
-In future, if you like to update your submodules [anything in bundle/ and pathogenStuff/], you can run:
+In future, if you like to update your submodules [anything in bundle/], you can run:
 
 ```bash
 git submodule foreach git pull origin master
