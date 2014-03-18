@@ -16,7 +16,8 @@ set cmdheight=2
 set nocursorcolumn
 set cursorline
 set errorformat=\"../../%f\"\\,%*[^0-9]%l:\ %m
-set expandtab
+set noexpandtab
+set tabstop=4
 set hidden
 set hlsearch
 set ignorecase
