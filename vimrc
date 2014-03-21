@@ -23,7 +23,7 @@ set hlsearch
 set ignorecase
 set incsearch
 set laststatus=2
-set list
+set nolist
 set listchars=tab:>-,trail:-
 set mouse=c
 set nowrap
