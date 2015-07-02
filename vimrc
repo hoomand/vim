@@ -83,8 +83,10 @@ set wildignore+=*/vendor/**
 " Define Ctrl-B shortcut to open buffer select
 nmap <silent> <C-B> :TSelectBuffer<cr>
 
+""""""""""""""""""" NERDTree """"""""""""""""""""""""""""
 " Define ,t to open nerdtree
 nmap <silent> <Leader>t :NERDTreeToggle<cr>
+let NERDTreeIgnore = ['\.pyc$']
 
 " RSpec.vim mappings
 map <Leader><Leader>t :call RunCurrentSpecFile()<CR>
