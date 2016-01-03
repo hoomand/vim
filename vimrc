@@ -63,6 +63,9 @@ inoremap jj <Esc>
 nnoremap <Leader>r :source ~/.vimrc<CR>
 nnoremap <Leader><Leader>r :e ~/.vimrc<CR>
 
+" Save and run openned file by hitting F9 if it's a python script
+autocmd FileType python nnoremap <buffer> <F9> :w<CR>:!clear;python %<CR>
+
 nmap <F1> <Esc>
 imap <F1> <Esc>
 
