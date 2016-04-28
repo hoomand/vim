@@ -84,7 +84,7 @@ let g:ctrlp_working_path_mode = 0
 set wildignore+=*/vendor/**
 
 " Define Ctrl-B shortcut to open buffer select
-nmap <silent> <C-B> :TSelectBuffer<cr>
+nmap <silent> <C-F> :TSelectBuffer<cr>
 
 """"""""""""""""""" NERDTree """"""""""""""""""""""""""""
 " Define ,t to open nerdtree
