@@ -52,6 +52,13 @@ highlight   Search        term=reverse cterm=bold ctermbg=11 ctermfg=0
 highlight   Visual        term=NONE    cterm=bold ctermbg=10 ctermfg=8
 "
 
+" folding, shortkeys: zc and zo to fold/unfold a part; zM and zR for whole
+" document
+set foldmethod=indent   "fold based on indent
+set foldnestmax=10      "deepest fold is 10 levels
+set nofoldenable        "dont fold by default
+set foldlevel=1         "this is just what i use
+
 " :help last-position-jump
 autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
 
