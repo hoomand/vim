@@ -53,7 +53,7 @@ highlight   Visual        term=NONE    cterm=bold ctermbg=10 ctermfg=8
 "
 
 " folding, shortkeys: zc and zo to fold/unfold a part; zM and zR for whole
-" document
+" document. za is to toggle folding.
 set foldmethod=indent   "fold based on indent
 set foldnestmax=10      "deepest fold is 10 levels
 set nofoldenable        "dont fold by default
