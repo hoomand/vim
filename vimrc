@@ -62,9 +62,6 @@ set foldlevel=1         "this is just what i use
 " :help last-position-jump
 autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
 
-" Fix Laravel blade auto indent
-autocmd BufNewFile,BufRead *.blade.php set ft=html | set ft=phtml | set ft=blade
-
 nnoremap <C-L> :noh<CR><C-L>
 inoremap jj <Esc>
 nnoremap <Leader>r :source ~/.vimrc<CR>
@@ -97,12 +94,5 @@ nmap <silent> <C-F> :TSelectBuffer<cr>
 " Define ,t to open nerdtree
 nmap <silent> <Leader>t :NERDTreeToggle<cr>
 let NERDTreeIgnore = ['\.pyc$']
-
-" RSpec.vim mappings
-map <Leader><Leader>t :call RunCurrentSpecFile()<CR>
-map <Leader><Leader>s :call RunNearestSpec()<CR>
-map <Leader><Leader>l :call RunLastSpec()<CR>
-map <Leader><Leader>a :call RunAllSpecs()<CR>
-let g:rspec_command = "!rspec --drb {spec}"
 
 colorscheme xoria256
