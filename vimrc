@@ -95,4 +95,8 @@ nmap <silent> <C-F> :TSelectBuffer<cr>
 nmap <silent> <Leader>t :NERDTreeToggle<cr>
 let NERDTreeIgnore = ['\.pyc$']
 
+""""""""""""""""""" Commands """"""""""""""""""""""""""""
+" Prettify JSON
+command Prettify %!python -m json.tool
+
 colorscheme xoria256
