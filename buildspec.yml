@@ -1,0 +1,23 @@
+version: 0.1
+artifacts:
+ files:
+    - vimrc
+phases:
+ install:
+    commands:
+      - "echo We are not going to install anything special"
+ pre_build:
+    commands:
+      - "echo Nothing much to do in the pre_build phase..."
+      - "echo Current directory `pwd`"
+      - "echo Bundle path is `find . -type d -iname bundle`"
+      - "echo Number of files in bundle before submodule = `find bundle -type f | wc -l`"
+ build:
+    commands:
+      - "echo Build started on `date`"
+      - "git submodule init"
+      - "git submodule update"
+ post_build:
+    commands:
+      - "echo Build completed on `date`"
+      - "echo Number of files in bundle after submodule commands = `find bundle -type f | wc -l`"
